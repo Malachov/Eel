@@ -1,4 +1,4 @@
-import eel
+import EelForkExcludeFiles as eel
 
 # Set web files folder and optionally specify which file types to check for eel.expose()
 eel.init('web')

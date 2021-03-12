@@ -1,4 +1,4 @@
-import eel
+import EelForkExcludeFiles as eel
 import pytest
 from tests.utils import TEST_DATA_DIR
 

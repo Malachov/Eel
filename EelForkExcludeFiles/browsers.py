@@ -1,9 +1,9 @@
 import subprocess as sps
 import webbrowser as wbr
 
-import eel.chrome as chm
-import eel.electron as ele
-import eel.edge as edge
+from . import chrome as chm
+from . import electron as ele
+from . import edge as edge
 #import eel.firefox as ffx      TODO
 #import eel.safari as saf       TODO
 

@@ -5,12 +5,10 @@ with open('README.md') as read_me:
     long_description = read_me.read()
 
 setup(
-    name='Eel',
-    version='0.14.0',
+    name='EelForkExcludeFiles',
+    version='0.14.1',
     author='Chris Knott',
-    author_email='chrisknott@hotmail.co.uk',
-    url='https://github.com/samuelhwilliams/Eel',
-    packages=['eel'],
+    packages=['EelForkExcludeFiles'],
     package_data={
         'eel': ['eel.js'],
     },

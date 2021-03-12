@@ -1,4 +1,4 @@
-import eel
+import EelForkExcludeFiles as eel
 
 eel.init('web')                     # Give folder containing web files
 

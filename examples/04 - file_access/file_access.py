@@ -1,4 +1,5 @@
-import eel, os, random
+import EelForkExcludeFiles as eel
+import os, random
 
 eel.init('web')
 

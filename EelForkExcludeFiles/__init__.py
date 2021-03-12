@@ -9,7 +9,7 @@ import bottle as btl
 import bottle.ext.websocket as wbs
 import re as rgx
 import os
-import eel.browsers as brw
+from . import browsers as brw
 import pyparsing as pp
 import random as rnd
 import sys
@@ -69,7 +69,7 @@ api_error_message = '''
 def expose(name_or_function=None):
     # Deal with '@eel.expose()' - treat as '@eel.expose'
     if name_or_function is None:
-        return expose
+        return exp
 
     if type(name_or_function) == str:   # Called as '@eel.expose("my_name")'
         name = name_or_function
@@ -100,8 +100,10 @@ EXPOSED_JS_FUNCTIONS = pp.ZeroOrMore(
 )
 
 
-def init(path, allowed_extensions=['.js', '.html', '.txt', '.htm',
-                                   '.xhtml', '.vue'], js_result_timeout=10000):
+def init(path,
+         allowed_extensions=['.js', '.html', '.txt', '.htm', '.xhtml', '.vue'],
+         exlcude_patterns=[],
+         js_result_timeout=10000):
     global root_path, _js_functions, _js_result_timeout
     root_path = _get_real_path(path)
 
@@ -109,6 +111,9 @@ def init(path, allowed_extensions=['.js', '.html', '.txt', '.htm',
     for root, _, files in os.walk(root_path):
         for name in files:
             if not any(name.endswith(ext) for ext in allowed_extensions):
+                continue
+
+            if exlcude_patterns and any(name.startswith(exc) for exc in exlcude_patterns):
                 continue
 
             try:
