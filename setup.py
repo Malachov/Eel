@@ -6,13 +6,13 @@ with open('README.md') as read_me:
 
 setup(
     name='EelForkExcludeFiles',
-    version='0.14.2',
+    version='0.14.3',
     author='Chris Knott',
     packages=['EelForkExcludeFiles'],
     package_data={
         'eel': ['eel.js'],
     },
-    install_requires=['bottle', 'bottle-websocket', 'future', 'pyparsing', 'whichcraft'],
+    install_requires=['bottle', 'bottle-websocket', 'future', 'pyparsing', 'whichcraft', 'eel'],
     extras_require={
         "jinja2": ['jinja2>=2.10']
     },
