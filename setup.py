@@ -1,17 +1,18 @@
 from io import open
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md") as read_me:
     long_description = read_me.read()
 
 setup(
     name="EelForkExcludeFiles",
-    version="0.14.7",
+    version="0.14.8",
     author="Chris Knott",
-    packages=["EelForkExcludeFiles"],
+    packages=find_packages(),
     package_data={
-        "eel": ["eel.js"],
+        "": ["eel.js"],
     },
+    include_package_data=True,
     install_requires=[
         "bottle",
         "bottle-websocket",
