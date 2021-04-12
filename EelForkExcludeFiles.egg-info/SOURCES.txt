@@ -6,6 +6,7 @@ EelForkExcludeFiles/__main__.py
 EelForkExcludeFiles/browsers.py
 EelForkExcludeFiles/chrome.py
 EelForkExcludeFiles/edge.py
+EelForkExcludeFiles/eel.js
 EelForkExcludeFiles/electron.py
 EelForkExcludeFiles.egg-info/PKG-INFO
 EelForkExcludeFiles.egg-info/SOURCES.txt

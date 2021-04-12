@@ -6,7 +6,7 @@ with open("README.md") as read_me:
 
 setup(
     name="EelForkExcludeFiles",
-    version="0.14.5",
+    version="0.14.6",
     author="Chris Knott",
     packages=["EelForkExcludeFiles"],
     package_data={
