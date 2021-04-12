@@ -6,11 +6,11 @@ with open("README.md") as read_me:
 
 setup(
     name="EelForkExcludeFiles",
-    version="0.14.4",
+    version="0.14.5",
     author="Chris Knott",
     packages=["EelForkExcludeFiles"],
     package_data={
-        "eel": ["eel.js"],
+        "eel": ["EelForkExcludeFiles/eel.js"],
     },
     install_requires=[
         "bottle",
@@ -19,7 +19,6 @@ setup(
         "pyparsing",
         "whichcraft",
     ],
-    include_package_data=True,
     extras_require={"jinja2": ["jinja2>=2.10"]},
     python_requires=">=3.6",
     description="For little HTML GUI applications, with easy Python/JS interop",

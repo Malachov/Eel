@@ -3,7 +3,6 @@ bottle-websocket
 future
 pyparsing
 whichcraft
-eel
 
 [jinja2]
 jinja2>=2.10
