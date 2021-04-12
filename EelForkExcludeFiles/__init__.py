@@ -19,7 +19,7 @@ import socket
 import mimetypes
 
 mimetypes.add_type("application/javascript", ".js")
-_eel_js_file = pkg.resource_filename("eel", "eel.js")
+_eel_js_file = pkg.resource_filename("EelForkExcludeFiles", "eel.js")
 _eel_js = open(_eel_js_file, encoding="utf-8").read()
 _websockets = []
 _call_return_values = {}

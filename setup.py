@@ -6,11 +6,11 @@ with open("README.md") as read_me:
 
 setup(
     name="EelForkExcludeFiles",
-    version="0.14.6",
+    version="0.14.7",
     author="Chris Knott",
     packages=["EelForkExcludeFiles"],
     package_data={
-        "eel": ["EelForkExcludeFiles/eel.js"],
+        "eel": ["eel.js"],
     },
     install_requires=[
         "bottle",
