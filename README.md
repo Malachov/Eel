@@ -1,4 +1,6 @@
-# Eel
+# EelForkExcludeFiles
+
+This is fork of eel with just small changes - js files generated from node modules can be excluded, so start time is faster.
 
 [![PyPI version](https://img.shields.io/pypi/v/Eel?style=for-the-badge)](https://pypi.org/project/Eel/)
 [![PyPi Downloads](https://img.shields.io/pypi/dm/Eel?style=for-the-badge)](https://pypistats.org/packages/eel)
